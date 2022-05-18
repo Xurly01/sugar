@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Rush</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./registro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light fondonav">
+        <div class="container-fluid">
+            <div class="col">
+                <a href="inicio.html"><img src="./Img/logo.jpg" height="150" width="200" class="rounded-circle" alt=""></a>
+            </div>
+            <div class="col-8">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav letra">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" href="hombre.html"><span class="cambio">Hombre</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" href="mujer.html"><span class="cambio">Mujer</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" href="nino.html"><span class="cambio">Niño</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" href="sesion.html"><span class="cambio">Iniciar sesión</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active rosa" href="registro.html"><span class="cambio2">Registrarse</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html"><span class="cambio">Contactanos</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="navbar-toggler bg-white mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+
+
+<!--CONTENIDO -->
+<div class="container-fluid fondo pt-4 pb-4">
+    <div class="row">
+    <div class="col-md-12">
+      <form action="registro.php" method="post">
+        <h1> Registro </h1>
+        
+        <fieldset>
+          
+          <legend><span class="number">1</span>DATOS PERSONALES</legend>
+        
+          <label for="name">Nombre:</label>
+          <input type="text" id="nombre" placeholder="Nombre" name="nombre" required="required">
+
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" placeholder="Apellidos" name="apellidos" required="required">
+
+          <label for="dni">DNI:</label>
+          <input type="text" id="dni" placeholder="DNI" minlength="9" maxlength="9" name="dni" required="required">
+        
+          <label for="email">Email:</label>
+          <input type="email" id="mail" placeholder="ejemplo@ejemplo.com" name="email" required="required">
+       
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="contrasena" required="required">
+        
+          
+        </fieldset>
+        <fieldset>  
+        
+          <legend><span class="number">2</span> DIRECCIÓN ENVIO</legend>
+          
+          <label for="direccion">Dirección</label>
+                <textarea name="direccion" id="direccion" placeholder="calle, número, piso" required="required"></textarea>
+                <br>
+                <br>
+                <label for="codigopostal">Código Postal</label>
+                <input type="text" id="codigopostal" placeholder="código postal" name="codigopostal" maxlength="5" required="required">
+                <br>
+                <br>
+
+                 <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad" placeholder="Ciudad" name="ciudad" required="required">
+         </fieldset>
+       
+
+
+        <button type="submit" name="enviar" class="botonrosa rounded-pill">Registrarse</button>
+        
+       </form>
+        </div>
+      </div>
+</div>
+<!--PIE -->
+    <div class="container-fluid fondonav pt-2">
+        <div class="row mt-3">
+            <div class="col">
+                <a href="inicio.html"><img src="./Img/logo.jpg" height="200" width="250" alt="" class="rounded-circle mt-2 d-block mx-auto"></a>
+            </div>
+        </div>
+        <div class="row letra text-center mt-2">
+            <div class="col">
+                <a class="nav-link active" aria-current="page" href="hombre.html"><span class="cambio">Hombre</span></a>
+                <a class="nav-link active" aria-current="page" href="mujer.html"><span class="cambio">Mujer</span></a>
+                <a class="nav-link active" aria-current="page" href="nino.html"><span class="cambio">Niño</span></a>
+                <a class="nav-link active" aria-current="page" href="sesion.html"><span class="cambio">Iniciar sesión</span></a>
+                <a class="nav-link active" aria-current="page" href="contacto.html"><span class="cambio">Contactanos</span></a>
+            </div>
+        </div>
+        <div class="row mt-5 text-center">
+            <div class="col letra ms-5 text-muted">ESTA PAGINA ES DE USO EXCLUSIVO PARA PRACTICA UNIVERSITARIA</div>
+        </div>
+    </div>
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>

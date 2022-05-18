@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Rush</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styleproducto.css">
+    <link rel="stylesheet" href="./registro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light fondonav">
+        <div class="container-fluid">
+            <div class="col">
+                <a href="inicio.html"><img src="./Img/logo.jpg" height="150" width="200" class="rounded-circle" alt=""></a>
+            </div>
+            <div class="col-8">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav letra">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" href="hombre.html"><span class="cambio">Hombre</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" href="mujer.html"><span class="cambio">Mujer</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" href="nino.html"><span class="cambio">Niño</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" href="sesion.html"><span class="cambio">Iniciar sesión</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" href="registro.html"><span class="cambio">Registrarse</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html"><span class="cambio">Contactanos</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="navbar-toggler bg-white mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!--CONTENIDO -->
+    <div class="container">
+        <div class="product-slider">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Img/zn5.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Img/zn52.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Img/zn53.webp" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev negro" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next negro" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="clearfix">
+                <div id="thumbcarousel" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="./Img/zn5.webp"></div>
+                            <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="./Img/zn52.webp"></div>
+                            <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="./Img/zn53.webp"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-sm-6 text-center">
+                <h2>NIKE</h2>
+                <h3>Air Max Dawn</h3>
+                <h2>79,99€</h2>
+                <hr>
+                <h2 class="text-center">Nuevas AIR MAX DAWN</h2>
+                <p class="text-center">Las Nike Air Max Dawn marcan un antes y un después en el mundo Air Max.Hemos combinado un estilo clásico con detalles de suave ante para crear unas zapatillas que transportan al futuro. Además, se han confeccionado con, al menos, un 20 % de materiales reciclados por peso.Apuesta por este modelo sencillo y versátil con amortiguación Air para que los más pequeños arrasen.</p>
+                <hr>
+            </div>
+            <div class="col"></div>
+            <div class="col-sm-5">
+                <form action="">
+                    <h3>TALLA:</h3>
+                    <select class="mt-3 mb-3" aria-label=".form-select-lg example">
+                        <option selected>Talla</option>
+                        <option value="1">30</option>
+                        <option value="2">31</option>
+                        <option value="3">32</option>
+                        <option value="4">33</option>
+                        <option value="5">34</option>
+                        <option value="6">35</option>
+                    </select>
+                    <h3>METODO DE PAGO:</h3>
+                    <select class="mt-3 mb-3" aria-label=".form-select-lg example">
+                        <option selected>Tipo de tarjeta</option>
+                        <option value="1">VISA</option>
+                        <option value="2">MASTERCARD</option>
+                        <option value="3">AMERICAN EXPRESS</option>
+                    </select>
+                    <label for="numtarjeta" class="mt-3">NUMERO DE TARJETA</label>
+                    <input type="text" id="ccnum" name="cardnumber" maxlength="16" placeholder="XXXX-XXXX-XXXX-XXXX">
+                    <label for="caducidad" class="mt-3">FECHA CADUCIDAD</label>
+                    <input type="date" id="start" name="trip-start" value="" min="2022-01-01" max="2030-12-31">
+                    <label for="cvc" class="mt-3">CVC</label>
+                    <input type="text" id="ccnum" name="cardnumber" maxlength="3" placeholder="123">
+                    <button type="submit" class="boton rounded-pill text-white mt-4">COMPRAR</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--PIE -->
+    <div class="container-fluid fondonav">
+        <div class="row azul p-5">
+            <div class="col-sm-5 mt-4">
+                <p class="letra">ÚNETE Y CONSIGUE LOS MEJORES DESCUENTOS</p>
+            </div>
+            <div class="col-sm-5">
+                <a href="registro.html"><button type="button" class="botonrosa text-white rounded-pill mt-3 p-3">REGISTRARSE</button></a>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <a href="inicio.html"><img src="./Img/logo.jpg" height="200" width="250" alt="" class="rounded-circle mt-2 d-block mx-auto"></a>
+            </div>
+        </div>
+        <div class="row letra text-center mt-2">
+            <div class="col">
+                <a class="nav-link active" aria-current="page" href="hombre.html"><span class="cambio">Hombre</span></a>
+                <a class="nav-link active" aria-current="page" href="mujer.html"><span class="cambio">Mujer</span></a>
+                <a class="nav-link active" aria-current="page" href="nino.html"><span class="cambio">Niño</span></a>
+                <a class="nav-link active" aria-current="page" href="sesion.html"><span class="cambio">Iniciar sesión</span></a>
+                <a class="nav-link active" aria-current="page" href="contacto.html"><span class="cambio">Contactanos</span></a>
+            </div>
+        </div>
+        <div class="row mt-5 text-center">
+            <div class="col letra ms-5 text-muted">ESTA PAGINA ES DE USO EXCLUSIVO PARA PRACTICA UNIVERSITARIA</div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>

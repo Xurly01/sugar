@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+.flex-container {
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+}
+.flex-title {
+	color: #f1f1f1;
+	position: relative;
+	font-size: 6vw;
+	margin: auto;
+	text-align: center;
+	top: 15%;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	@media screen and (max-width: 768px) {
+		transform: rotate(0deg) !important;
+	}
+}
+
+.flex-slide {
+	-webkit-flex: 1;
+	-ms-flex: 1;     
+	flex: 1;
+	cursor: pointer;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	@media screen and (max-width: 768px) {
+		overflow: auto;
+		overflow-x: hidden;
+	}
+}
+.flex-slide p {
+	@media screen and (max-width: 768px) {
+		font-size: 2em;
+	}
+} 
+.flex-slide ul li {
+	@media screen and (max-width: 768px) {
+		font-size: 2em;
+	}
+} 
+.flex-slide:hover {
+	-webkit-flex-grow: 3;
+	flex-grow: 3;
+}
+.hombre {
+	height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Img/hombre.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	@media screen and (min-width: 768px) {
+		animation: aboutFlexSlide $defaultSeconds 1;
+		animation-delay: 0s;
+	}
+}
+
+@keyframes aboutFlexSlide {
+	0% {
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+	}
+	50% {
+		-webkit-flex-grow: 3;
+		flex-grow: 3;
+	}
+	100% {
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+	}
+}
+
+.flex-title-home {
+	@media screen and (min-width: 768px) {
+		transform: rotate(90deg);
+		top: 15%;
+		animation: aboutFlexSlide $defaultSeconds 1;
+		animation-delay: 0s;
+	}
+}
+
+
+
+@keyframes homeFlextitle {
+	0% {
+		transform: rotate(90deg);
+		top: 15%;
+	}
+	50% {
+		transform: rotate(0deg);
+		top: 15%;
+	}
+	100% {
+		transform: rotate(90deg);
+		top: 15%;
+	}
+}
+
+.flex-about-home {
+	opacity: 0;
+	@media screen and (min-width: 768px) {
+		animation: aboutFlexSlide $defaultSeconds 1;
+		animation-delay: 0s;
+	}
+}
+
+@keyframes flexAboutHome {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+.mujer {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Img/mujer.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;	
+}
+.contact-form {
+	width: 100%;
+}
+input {
+	width: 100%;
+}
+textarea {
+	width: 100%;	
+}
+
+.nino {
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Img/nino.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+
+.letra{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 1000;
+	font-size: 25px;
+}
+
+
+.fondonav{
+	background-color: black;
+}
+
+
+.azul{
+	background: #d6eefb;
+}
+
+.botonrosa {
+  background-color: #f5007c;
+  border-color: #f5007c;
+}
+
+.botonrosa:hover {
+	background-color:#fc50a8 ;
+	border-color: #fc50a8;
+}
+
+.rosa{
+	background-color: #f5007c;
+	border-radius: 10px;
+}
+
+.negro{
+	background-color: black;
+}
+
+.blanco{
+	text-decoration: none;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+.cambio {color:white;}
+.cambio:hover {color:#f5007c;}
+
+.cambio2 {color:white;}
+.cambio2:hover {color:black;}
